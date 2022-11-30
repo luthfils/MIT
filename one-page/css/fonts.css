@@ -5,7 +5,7 @@
 -----------------------------------------------------------------*/
 @import url('http://fonts.cdnfonts.com/css/open-sans');
 
-body,
+/* body,
 small,
 .sub-menu-container .menu-item > .menu-link,
 .wp-caption,
@@ -24,10 +24,10 @@ small,
 .before-heading,
 .wedding-head .first-name span,
 .wedding-head .last-name span,
-.font-secondary { font-family: 'Open Sans', sans-serif !important; }
+.font-secondary { font-family: 'Open Sans' !important; } */
 
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -47,5 +47,5 @@ label,
 .widget-filter-links li a,
 .nav-tree li a,
 .wedding-head,
-.font-primary { font-family: 'Open Sans', sans-serif !important; }
+.font-primary { font-family: 'Open Sans' !important; } */
 

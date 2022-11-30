@@ -10,7 +10,7 @@
 /* Custom Header Size
 -----------------------------------------------------------------*/
 .header-size-custom #logo img {
-	height: 32px;
+	height: 42px;
 }
 
 @media (min-width: 992px) {
@@ -73,7 +73,7 @@
 	#header.sticky-header #header-wrap,
 	#header.full-header.border-full-header.sticky-header #header-wrap {
 		box-shadow: none;
-		border-bottom: 1px solid #F5F5F5 !important;
+		border-bottom: 1px solid #212745 !important;
 		-webkit-backface-visibility: hidden;
 	}
 
