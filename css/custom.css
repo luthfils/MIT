@@ -97,6 +97,14 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px !important;
 }
 
+.list-alpha li {
+    list-style-type: lower-alpha !important;
+}
+
+.rounded-14 {
+    border-radius: 14px;
+}
+
 a:hover {
     color: #00AEBF;
 }
@@ -114,7 +122,11 @@ a:hover {
 }
 
 .fc-muted {
-    color: #F5F5F591;
+    color: #F5F5F591 !important;
+}
+
+.fc-red {
+	color: #F56262;
 }
 
 .bg-dark {
@@ -154,6 +166,10 @@ a:hover {
     background-color: #00AEBF !important;
 }
 
+.bg-secondary {
+	background-color: #FF914D !important;
+}
+
 .bg-gray {
     background-color: #F8F9FA !important;
 }
@@ -172,6 +188,7 @@ h4 {
     background-color: #FF914D;
     color: #FFF;
     text-shadow: none;
+    transition: all .3s ease;
 }
 
 .fw-900 {
@@ -205,18 +222,18 @@ h1 {
 }
 
 .button.button-border {
-    border: 2px solid #004BBB;
+    border: 2px solid #00AEBF;
     background-color: transparent;
-    color: #004BBB;
-    font-weight: 700;
+    color: #00AEBF;
     text-shadow: none;
-}
+  }
 
 .button.button-border:not(.button-fill):hover {
-    background-color: hsl(216deg 100% 95%);
-    color: #004BBB;
-    border-color: #004BBB !important;
+    background-color: transparent;
+    color: #FF914D;
+    border-color: #FF914D !important;
     text-shadow: none;
+    transition: all .3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -380,6 +397,7 @@ h2 {
     background-color: #272F53;
     color: #222;
     box-shadow: 0px 10px 70px rgb(3 27 78 / 10%);
+    transition: all .3s ease;
 }
 
 /* .timeline .sidenav > li > a:after {
@@ -410,7 +428,68 @@ h2 {
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    }
+}
+
+/* --------------------- Sponsor --------------------- */
+
+.sponsor .list-group-item {
+    position: relative;
+    display: list-item;
+    padding: 4px 8px;
+    color: #F5F5F591;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+.sponsor .card-sponsor {
+    border-radius: 14px;
+    border: 2px dashed #3B4577;
+}
+
+.sponsor .card-sponsor:hover {
+    border-radius: 14px;
+    border: 2px dashed #FF914D;
+    transition: all .3s ease;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
+.sponsor .points:hover {
+    border: 2px dashed #FF914D;
+}
+
+.sponsor .platinum:hover {
+    border: 2px dashed #57BFDF;
+}
+
+.sponsor .platinum h4 {
+    color:  #57BFDF;
+}
+
+.sponsor .gold:hover {
+    border: 2px dashed #D4AF37;
+}
+
+.sponsor .gold h4 {
+    color:  #D4AF37;
+}
+
+.sponsor .silver:hover {
+    border: 2px dashed #C0C0C0;
+}
+
+.sponsor .silver h4 {
+    color:  #C0C0C0;
+}
+
+.sponsor .bronze:hover {
+    border: 2px dashed #967444;
+}
+
+.sponsor .bronze h4 {
+    color:  #967444;
+}
 
 /* --------------------- Feature --------------------- */
 
@@ -875,28 +954,35 @@ h2 {
 
 /* --------------------- Footer --------------------- */
 
-.dark #footer, #footer.dark {
-    color: #fff;
-    background-color: #004BBB;
-    border-top-color: #004BBB;
+#footer {
+    border-top: 0px solid rgba(0,0,0,0.2);
 }
 
 .footer dl, dt, dd, ol, ul, li {
     list-style-type: none;
 }
 
-.dark .footer-widgets-wrap a {
-    color: #fff;
+.footer .copyrights a:hover {
+    color: #FF914D;
 }
 
-.dark .footer-widgets-wrap a:hover {
+.footer .copyrights a {
     color: #00AEBF;
 }
 
-.dark #copyrights, #copyrights.dark {
-    color: #fff;
-    background-color: rgb(0 0 0 / 5%);
+.footer a {
+    color: #F5F5F591;
 }
+
+.footer a:hover {
+    color: #00AEBF;
+}
+
+.footer .btn:hover {
+    background-color: #FF914D !important;
+    color: #F5F5F5;
+}
+
 
 #footer .widget .form-control {
     text-align: left;
