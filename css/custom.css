@@ -491,6 +491,38 @@ h2 {
     color:  #967444;
 }
 
+/* --------------------- Speaker, Judges --------------------- */
+
+.speaker .card-small:hover h3,
+.judges .card-small:hover h3 {
+    color: #FF914D;
+    transition: all .3s ease;
+}
+
+.speaker .card-small p,
+.judges .card-small p {
+    margin-bottom: 0;
+}
+
+.speaker .card-small img,
+.judges .card-small img {
+    border-radius: 8px;
+    border: 5px solid transparent;
+}
+
+.judges .card-judges {
+    border: 2px dashed #3B4577;
+    border-radius: 14px;
+}
+
+.judges .card-judges span {
+    font-size: 60px;
+    font-weight: bold;
+    color: #272F53;
+    margin-right: -26px;
+}
+
+
 /* --------------------- Feature --------------------- */
 
 .square-icon {
@@ -860,7 +892,7 @@ h2 {
 /* --------------------- FAQ --------------------- */
 
 .faq .accordion-card {
-    background: #ffffff;
+    background: #272F53;
     margin-bottom: 32px;
     padding: 0 20px;
     border-radius: 14px;
@@ -885,11 +917,7 @@ h2 {
 }
 
 .faq img {
-    padding: 80px 50px 0px 50px;
-    background: #9eaefc;
-    border-radius: 300px 300px 30px 30px;
-    width: 70%;
-    box-shadow: 0px 10px 70px rgb(3 27 78 / 10%);
+    width: 85%;
 }
 
 
