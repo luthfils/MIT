@@ -244,6 +244,62 @@ h2 {
     font-size: 40px;
 }
 
+.gx-6 {
+    --bs-gutter-x: 5rem;
+}
+
+.emphasis-title p {
+    font-size: 16px;
+ }
+
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #F5F5F5;
+  }
+
+.table-lg > :not(caption) > * > * {
+    padding: 1rem 1rem;
+}
+
+.table-comparison th:first-child, .table-comparison td:first-child {
+    text-align: left;
+    font-weight: bold;
+    width: 25%;
+  }
+
+.sub-menu-container .menu-item:hover > .menu-link {
+    font-weight: normal;
+}
+
+.sub-menu-container .menu-item > .menu-link {
+    color: #F5F5F5 !important;
+}
+
+@media (min-width: 992px) {
+    .sub-menu-container, .mega-menu-content {
+        position: absolute;
+        visibility: hidden;
+        background-color: #272F53;
+        box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+        border: 1px solid #272F53;
+            border-top-color: rgb(39, 47, 83);
+            border-top-style: solid;
+            border-top-width: 1px;
+        border-top: 0px solid #00AEBF;
+        z-index: 399;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        border-radius: 14px;
+    }
+
+    .sub-menu-container .menu-item:hover > .menu-link {
+        background-color: #272F53;
+        padding-left: 18px;
+        color: #00AEBF !important;
+        border-radius: 14px;
+      }
+}
+
 .feature-chip {
     width: 100%;
     margin: 20px;
@@ -318,7 +374,24 @@ h2 {
 	border-bottom: 1px solid #293156;
 }
 
+/* --------------------- Hero --------------------- */
 
+.hero .rounded-icon {
+    width: 52px;
+    height: 52px;
+    background: #00AEBF26;
+    font-size: 24px;
+}
+
+.hero .logo img {
+    height: 42px;
+}
+
+/* --------------------- About --------------------- */
+.about a.jump:hover {
+    color: #FF914D !important;
+    transition: all .3s ease;
+}
 /* --------------------- Journey --------------------- */
 
 .section-journey img {
@@ -479,36 +552,40 @@ h2 {
     border: 2px dashed #FF914D;
 }
 
-.sponsor .platinum:hover {
+/* .sponsor .platinum:hover {
     border: 2px dashed #57BFDF;
+} */
+
+.sponsor .table .platinum {
+    color:  #57BFDF !important;
 }
 
-.sponsor .platinum h4 {
-    color:  #57BFDF;
-}
-
-.sponsor .gold:hover {
+/* .sponsor .gold:hover {
     border: 2px dashed #D4AF37;
-}
+} */
 
-.sponsor .gold h4 {
+.sponsor .table .gold {
     color:  #D4AF37;
 }
 
-.sponsor .silver:hover {
+/* .sponsor .silver:hover {
     border: 2px dashed #C0C0C0;
-}
+} */
 
-.sponsor .silver h4 {
+.sponsor .table .silver {
     color:  #C0C0C0;
 }
 
-.sponsor .bronze:hover {
+/* .sponsor .bronze:hover {
     border: 2px dashed #967444;
+} */
+
+.sponsor .table .bronze {
+    color:  #967444;
 }
 
-.sponsor .bronze h4 {
-    color:  #967444;
+.sponsor .table td {
+    color: #F5F5F591 !important;
 }
 
 /* --------------------- Speaker, Judges --------------------- */
@@ -588,6 +665,12 @@ h2 {
 #page-title.page-title-dark .breadcrumb a:hover {
     color: #00AEBF;
 }
+
+.title-block {
+    padding: 2px 0 3px 20px;
+    border-left: 7px solid #00AEBF;
+    margin-bottom: 30px;
+  }
 
 /* --------------------- Feature --------------------- */
 
@@ -980,10 +1063,6 @@ h2 {
 
 .faq .toggle-title, .accordion-title {
     padding: 0 10px;
-}
-
-.faq img {
-    width: 85%;
 }
 
 
