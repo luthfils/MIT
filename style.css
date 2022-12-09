@@ -10245,7 +10245,7 @@ body:not(.device-touch) .button.button-full strong {
 		left: 0;
 		margin-left: -26px;
 		width: 50%;
-		border-top: 1px dashed #DDD;
+		border-top: 4px solid #FF914D;
 	}
 
 	.process-steps li::after {

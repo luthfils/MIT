@@ -297,7 +297,12 @@ h2 {
         padding-left: 18px;
         color: #00AEBF !important;
         border-radius: 14px;
-      }
+    }
+}
+
+.process-steps li .i-circled {
+    margin-bottom: 0 !important;
+    text-shadow: none;
 }
 
 .feature-chip {
@@ -1154,6 +1159,14 @@ h2 {
 .footer .btn:hover {
     background-color: #FF914D !important;
     color: #F5F5F5;
+}
+
+.footer .btn {
+    border-radius: 0 20px 20px 0;
+}
+
+.footer .email {
+    border-radius: 20px 0 0 20px;
 }
 
 
