@@ -153,89 +153,13 @@
 
 	<div class="body-overlay"></div>
 
-	<div id="side-panel" class="bgchanger">
-
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
-
-		<div class="side-panel-wrap">
-
-			<div class="widget widget_links clearfix">
-
-				<h4>About Canvas</h4>
-
-				<div style="font-size: 14px; line-height: 1.7;">
-					<address style="line-height: 1.7;">
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
-					</address>
-
-					<div class="clear topmargin-sm"></div>
-
-					<abbr title="Phone Number">Phone:</abbr> (1) 8547 632521<br>
-					<abbr title="Fax">Fax:</abbr> (1) 11 4752 1433<br>
-					<abbr title="Email Address">Email:</abbr> info@canvas.com
-				</div>
-
-			</div>
-
-			<div class="widget clearfix">
-
-				<h4>Connect Socially</h4>
-
-				<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
-					<i class="icon-facebook"></i>
-					<i class="icon-facebook"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
-					<i class="icon-twitter"></i>
-					<i class="icon-twitter"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-github" title="Github">
-					<i class="icon-github"></i>
-					<i class="icon-github"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-pinterest" title="Pinterest">
-					<i class="icon-pinterest"></i>
-					<i class="icon-pinterest"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-forrst" title="Forrst">
-					<i class="icon-forrst"></i>
-					<i class="icon-forrst"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-linkedin" title="LinkedIn">
-					<i class="icon-linkedin"></i>
-					<i class="icon-linkedin"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-gplus" title="Google Plus">
-					<i class="icon-gplus"></i>
-					<i class="icon-gplus"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
-					<i class="icon-instagram"></i>
-					<i class="icon-instagram"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-flickr" title="Flickr">
-					<i class="icon-flickr"></i>
-					<i class="icon-flickr"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-skype" title="Skype">
-					<i class="icon-skype"></i>
-					<i class="icon-skype"></i>
-				</a>
-
-			</div>
-
-		</div>
-
-	</div>
-
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false" data-sticky-offset="full" data-sticky-offset-negative="650">
+		<header id="header" class="full-header dark border-full-header header-size-custom bg-dark" data-sticky-shrink="false" data-mobile-sticky="true">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -247,7 +171,7 @@
 							<a href="index.html" class="retina-logo" data-dark-logo="assets/logo/logo-mit-dark.svg"><img src="assets/logo/logo-mit-dark.svg" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
-						<div class="header-misc">
+						<div class="header-misc d-none d-sm-block">
 							<a href="register.html">
 								<button class="button button-circle fw-medium ms-0"> Register Now </button>
 							</a>
@@ -262,14 +186,14 @@
 						<nav class="primary-menu">
 
 							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#wrapper"><div>Home</div></a>
+								<li class="menu-item current">
+									<a href="#" class="menu-link"><div>Home</div></a>
+								</li>
+								<li class="menu-item d-none">
+									<a href="event.html" class="menu-link"><div>Event</div></a>
 								</li>
 								<li class="menu-item">
-									<a href="event.html" class="menu-link" data-href="#section-event"><div>Event</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-speaker"><div>Speaker</div></a>
+									<a href="#" class="menu-link"><div>Speaker</div></a>
 									<ul class="sub-menu-container">
 										<li class="menu-item">
 											<a class="menu-link" href="speaker.html"><div>Conference Speaker</div></a>
@@ -291,6 +215,11 @@
 								<li class="menu-item">
 									<a href="faq.html" class="menu-link" ><div>FAQ</div></a>
 								</li>
+								<li class="menu-item d-block d-sm-none">
+									<a href="register.html">
+										<button class="button button-circle fw-medium ms-0"> Register Now </button>
+									</a>
+								</li>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -308,15 +237,15 @@
 
 				<div class="vertical-middle slider-element-fade">
 					<div class="container text-start py-5">
-						<div class="row align-items-center gx-6">
-							<div class="col-md-6 text-center text-md-start">
+						<div class="row align-items-center gx-6 gy-6">
+							<div class="col-lg-6 text-md-start">
 								<div class="logo mb-3">
 									<img data-animate="fadeInUp" data-delay="100" class="me-2" src="assets/logo/biofarma-white.svg" alt="Image">
 									<img data-animate="fadeInUp" data-delay="200" src="assets/logo/mit.svg" alt="Image">
 								</div>
 								<div class="emphasis-title bottommargin-sm">
 									<h1 class="fw-900 mb-3" data-animate="fadeInUp" data-delay="300">
-										Bio Farma X MIT<br>
+										Bio Farma X MIT
 										Hacking Medicine
 									</h1>
 									<p class="opmargin-sm mb-0 fc-muted" data-animate="fadeInUp" data-delay="400">
@@ -326,9 +255,9 @@
 								</div>
 								<div class="mb-5">
 									
-									<div class="row">
-										<div class="col" data-animate="fadeInUp" data-delay="500">
-											<div class="d-flex align-items-center justify-content-center">
+									<div class="row gy-4">
+										<div class="col-xl-6" data-animate="fadeInUp" data-delay="500">
+											<div class="d-flex">
 												<div class="me-4 fc-primary">
 													<div class="rounded-icon d-flex rounded-14 align-items-center justify-content-center">
 														<i class="bi bi-calendar"></i>
@@ -341,8 +270,8 @@
 												</div>
 											</div>
 										</div>
-										<div class="col" data-animate="fadeInUp" data-delay="600">
-											<div class="d-flex align-items-center justify-content-center">
+										<div class="col-xl-6" data-animate="fadeInUp" data-delay="600">
+											<div class="d-flex">
 												<div class="me-4 fc-primary">
 													<div class="rounded-icon d-flex rounded-14 align-items-center justify-content-center">
 														<i class="bi bi-geo-alt"></i>
@@ -367,14 +296,14 @@
 								<a data-scrollto="#section-about" data-animate="fadeInUp" data-delay="500" href="#" class="button button-circle button-border button-large fw-medium ms-0" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Learn More</a> -->
 							</div>
 
-							<div data-animate="fadeInUp" data-delay="100" class="col-md-6 text-end">
+							<div data-animate="fadeInUp" data-delay="100" class="col-lg-6 text-center">
 								<img src="assets/images/header.svg" alt="Header">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow">
+				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow d-none d-md-block">
 					<div class="scroll-inner">
 				    	<div class="scroll-wheel"></div>
 				  </div>
@@ -391,16 +320,16 @@
 				<div id="section-about" class="page-section about bg-dark pt-6">
 
 					<div class="container clearfix">
-						<h5 class="text-uppercase ls4 fw-normal mb-5 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">About</h5>
-						<div class="row gx-6">
-							<div class="col-md-6">
+						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">About</h5>
+						<div class="row gx-6 gy-5">
+							<div class="col-lg-6">
 								<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="200">Bio Farma</h2>
 								<p data-animate="fadeInUp" data-delay="300" class="fc-muted">
 									The Pharmaceutical BUMN Holding was formed on January 31, 2020, consisting of PT Bio Farma (Persero), PT Kimia Farma Tbk, and PT Indofarma Tbk, as well as PT INUKI which only joined in 2021 with the parent company, PT Bio Farma (Persero). Members of BUMN Pharmaceutical Holding have different business focuses, namely PT Bio Farma (Persero) which focuses on the life science business, PT Kimia Farma Tbk which focuses on the drug business and PT Indofarma Tbk which focuses on the herbal and medical device business, and PT INUKI which operates in the nuclear technology industry. The purpose of the establishment of the Pharmaceutical SOE Holding is to strengthen the independence of the national pharmaceutical industry, increase product availability and create joint innovations in the supply of pharmaceutical products.
 								</p>
 							</div>
 
-							<div class="col-md-6">
+							<div class="col-lg-6">
 								<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="400">MIT Hacking Medicine</h2>
 								<p data-animate="fadeInUp" data-delay="500" class="fc-muted">
 									MIT Hacking Medicine has facilitated nearly across a dozen countries and multiple U.S. states. It aims to energizing the healthcare community and accelerating medical innovation.
@@ -410,12 +339,9 @@
 								</p>
 							</div>
 						</div>
-						<div data-animate="fadeInUp" data-delay="700" class="center">
+						<!-- <div data-animate="fadeInUp" data-delay="700" class="center">
 							<a href="#" data-scrollto="#section-event" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="fc-primary fw-medium jump d-block d-lg-inline-block">Jump to Event<i class="bi bi-arrow-down ms-1"></i></a>
-							<!-- <a href="#" data-scrollto="#section-event" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">
-								<button data-animate="fadeInUp" data-delay="800" class="button button-large button-link fw-medium"><i class="icon-off"></i>Jump to Event</button>
-							</a> -->
-						</div>
+						</div> -->
 						
 					</div>
 
@@ -425,29 +351,29 @@
 
 					<div class="page-section journey pt-6 bg-dark-2">
 
-						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Event</h5>
+						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Journey</h5>
 
 						<h2 class="center mb-3 text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="200">Hackathon Journey</h2>
 
-						<div class="row mt-6">
-							<div class="col">
-								<div class="card-contact p-4 center" data-animate="fadeInUp" data-delay="300">
+						<div class="row mt-6 gy-lg-0 gy-4">
+							<div class="col-12 col-sm-4 col-lg">
+								<div class="card-journey p-4 center" data-animate="fadeInUp" data-delay="300">
 									<div class="square-icon fw-bold">
 										1
 									</div>
-									<div class="icon my-5">
+									<div class="icon my-4">
 										<img src="assets/images/carbon_events-alt.svg" alt="">
 									</div>
 									<h4 class="my-3">Collaborate and create ideas with other participants</h4>
 									<!-- <span class="fc-muted">Collaborate and create ideas with other participants</span> -->
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-12 col-sm-4 col-lg">
 								<div class="card-journey p-4 center" data-animate="fadeInUp" data-delay="400">
 									<div class="square-icon fw-bold">
 										2
 									</div>
-									<div class="icon my-5">
+									<div class="icon my-4">
 										<img src="assets/images/carbon_idea.svg" alt="">
 									</div>
 									<h4 class="my-3">Hack the problem and shape the idea
@@ -455,12 +381,12 @@
 									<!-- <span class="fc-muted">Collaborate and create ideas with other participants</span> -->
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-12 col-sm-4 col-lg">
 								<div class="card-journey p-4 center" data-animate="fadeInUp" data-delay="500">
 									<div class="square-icon fw-bold">
 										3
 									</div>
-									<div class="icon my-5">
+									<div class="icon my-4">
 										<img src="assets/images/carbon_collaborate.svg" alt="">
 									</div>
 									<h4 class="my-3">Process feedback by mentors
@@ -468,12 +394,12 @@
 									<!-- <span class="fc-muted">Collaborate and create ideas with other participants</span> -->
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-12 col-sm">
 								<div class="card-journey p-4 center" data-animate="fadeInUp" data-delay="600">
 									<div class="square-icon fw-bold">
 										4
 									</div>
-									<div class="icon my-5">
+									<div class="icon my-4">
 										<img src="assets/images/carbon_group-presentation.svg" alt="">
 									</div>
 									<h4 class="my-3">Pitching to the judging panel
@@ -481,12 +407,12 @@
 									<!-- <span class="fc-muted">Collaborate and create ideas with other participants</span> -->
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-12 col-sm">
 								<div class="card-journey p-4 center" data-animate="fadeInUp" data-delay="700">
 									<div class="square-icon fw-bold">
 										5
 									</div>
-									<div class="icon my-5">
+									<div class="icon my-4">
 										<img src="assets/images/carbon_trophy.svg" alt="">
 									</div>
 									<h4 class="my-3">Winner and runner up announcement</h4>
@@ -496,214 +422,430 @@
 						</div>
 
 					</div>
+				</div>
 
-					<div class="page-section timeline pt-6 bg-dark">
+				<div id="section-timeline" class="page-section timeline bg-dark pt-6">
+					<div class="container clearfix">
 
-						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Event</h5>
+						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Agenda</h5>
 
 						<h2 class="center mb-3 text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="200">Hackathon Agenda</h2>
 
-						<div id="side-navigation" class="row my-6 justify-content-center gx-6" data-plugin="tabs">
+						<!-- Desktop -->
+						<div class="d-none d-md-block">
+							<div id="side-navigation" class="row mt-6 gx-6" data-plugin="tabs">
 
-							<div class="col-md-6 col-lg-5">
-								<ul class="sidenav bg-dark mb-0">
-									<li data-animate="fadeInUp" data-delay="300" class="ui-tabs-active">
-										<a href="#snav-content1" class="d-flex">
-											<div class="me-4">
-												<div class="rounded-icon">
-													<i class="bi bi-calendar"></i>
+								<div class="col-md-6">
+									<ul class="sidenav bg-dark mb-0">
+										<li data-animate="fadeInUp" data-delay="300" class="ui-tabs-active">
+											<a href="#snav-content1" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 1</h4>
+													<span class="fc-muted">Thursday, February 16 2023</span>
+												</div>
+											</a>
+										</li>
+										<li data-animate="fadeInUp" data-delay="400" class="my-4">
+											<a href="#snav-content2" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 2-3</h4>
+													<span class="fc-muted">Friday, February 17 2023 - Saturday, February 18 2023</span>
+												</div>
+											</a>
+										</li>
+										<li data-animate="fadeInUp" data-delay="500">
+											<a href="#snav-content3" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 4</h4>
+													<span class="fc-muted">Sunday, February 19 2023</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-md-6" data-animate="fadeIn" data-delay="300">
+									<div id="snav-content1">
+										<div>
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 1</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Registers</h4>
+													<span class="fc-muted">Registrants will be short listed into 100 participants/track. Total 200 participants</span>
 												</div>
 											</div>
-											
-											<div>
-												<h4 class="mb-1 fw-bold">Day 1</h4>
-												<span class="fc-muted">Thursday, February 16 2023</span>
-											</div>
-										</a>
-									</li>
-									<li data-animate="fadeInUp" data-delay="400" class="my-4">
-										<a href="#snav-content2" class="d-flex">
-											<div class="me-4">
-												<div class="rounded-icon">
-													<i class="bi bi-calendar"></i>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Team Member</h4>
+													<span class="fc-muted">Team member : 4 – 7 persons</span>
 												</div>
 											</div>
-											
-											<div>
-												<h4 class="mb-1 fw-bold">Day 2-3</h4>
-												<span class="fc-muted">Friday, February 17 2023 - Saturday, February 18 2023</span>
-											</div>
-										</a>
-									</li>
-									<li data-animate="fadeInUp" data-delay="500">
-										<a href="#snav-content3" class="d-flex">
-											<div class="me-4">
-												<div class="rounded-icon">
-													<i class="bi bi-calendar"></i>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>3.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Time</h4>
+													<span class="fc-muted">Time : 48 hrs</span>
 												</div>
 											</div>
-											
-											<div>
-												<h4 class="mb-1 fw-bold">Day 4</h4>
-												<span class="fc-muted">Sunday, February 19 2023</span>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>4.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Main Speakers</h4>
+													<span class="fc-muted">Main Speakers : Chief of Digital Transformation, MoH, MoSOE, Founder/C-Level Start-up </span>
+												</div>
 											</div>
-										</a>
-									</li>
-								</ul>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>5.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Judges</h4>
+													<span class="fc-muted">Judges  : Internal, Government and Private Sector </span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div id="snav-content2">
+										<div>
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 2-3</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Conference</h4>
+													<span class="fc-muted">Full day event. The speakers are Stakeholders, SOE’s, Private Sectors</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Digital Expo</h4>
+													<span class="fc-muted">IT, Healthcare and Business Exhibition</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>3.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Workshop</h4>
+													<span class="fc-muted">IT, Healthcare and Business Workshop (Parallel)</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>4.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Networking Dinner</h4>
+													<span class="fc-muted">Welcoming and entertaining Hackathon participants</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div id="snav-content3">
+										<div>
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 4</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Pitching Day</h4>
+													<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Gala Dinner & Closing</h4>
+													<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							</div>
-
-							<div class="col-md-6 col-lg-5" data-animate="fadeIn" data-delay="300">
-								<div id="snav-content1">
-									<div>
-										<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 1</h4>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>1.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Registers</h4>
-												<span class="fc-muted">Registrants will be short listed into 100 participants/track. Total 200 participants</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>2.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Team Member</h4>
-												<span class="fc-muted">Team member : 4 – 7 persons</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>3.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Time</h4>
-												<span class="fc-muted">Time : 48 hrs</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>4.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Main Speakers</h4>
-												<span class="fc-muted">Main Speakers : Chief of Digital Transformation, MoH, MoSOE, Founder/C-Level Start-up </span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>5.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Judges</h4>
-												<span class="fc-muted">Judges  : Internal, Government and Private Sector </span>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="snav-content2">
-									<div>
-										<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 2-3</h4>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>1.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Conference</h4>
-												<span class="fc-muted">Full day event. The speakers are Stakeholders, SOE’s, Private Sectors</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>2.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Digital Expo</h4>
-												<span class="fc-muted">IT, Healthcare and Business Exhibition</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>3.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Workshop</h4>
-												<span class="fc-muted">IT, Healthcare and Business Workshop (Parallel)</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>4.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Networking Dinner</h4>
-												<span class="fc-muted">Welcoming and entertaining Hackathon participants</span>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="snav-content3">
-									<div>
-										<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 4</h4>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>1.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Pitching Day</h4>
-												<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-											</div>
-										</div>
-										<div class="d-flex mb-4">
-											<div class="me-4">
-												<div class="number fw-bold d-flex align-items-center justify-content-center">
-													<span>2.</span>
-												</div>
-											</div>
-											<div>
-												<h4 class="mb-1 fw-bold">Gala Dinner & Closing</h4>
-												<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
 						</div>
 
-					</div>
+						<!-- Mobile -->
+						<div class="d-md-none d-md-block">
+							<div class="accordion mb-0 mt-6">
 
+								<div class="accordion-card" data-animate="fadeInUp" data-delay="300">
+									<div class="accordion-header">
+										<div class="accordion-title">
+											<a href="#snav-content1" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 1</h4>
+													<span class="fc-muted">Thursday, February 16 2023</span>
+												</div>
+											</a>
+										</div>
+										<div class="accordion-icon d-flex">
+											<i class="accordion-closed bi bi-chevron-down"></i>
+											<i class="accordion-open bi bi-chevron-up"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-title">
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 1</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Registers</h4>
+													<span class="fc-muted">Registrants will be short listed into 100 participants/track. Total 200 participants</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Team Member</h4>
+													<span class="fc-muted">Team member : 4 – 7 persons</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>3.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Time</h4>
+													<span class="fc-muted">Time : 48 hrs</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>4.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Main Speakers</h4>
+													<span class="fc-muted">Main Speakers : Chief of Digital Transformation, MoH, MoSOE, Founder/C-Level Start-up </span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>5.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Judges</h4>
+													<span class="fc-muted">Judges  : Internal, Government and Private Sector </span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-card" data-animate="fadeInUp" data-delay="300">
+									<div class="accordion-header">
+										<div class="accordion-title">
+											<a href="#snav-content1" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 2-3</h4>
+													<span class="fc-muted">Friday, February 17 2023 - Saturday, February 18 2023</span>
+												</div>
+											</a>
+										</div>
+										<div class="accordion-icon d-flex">
+											<i class="accordion-closed bi bi-chevron-down"></i>
+											<i class="accordion-open bi bi-chevron-up"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-title">
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 2-3</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Conference</h4>
+													<span class="fc-muted">Full day event. The speakers are Stakeholders, SOE’s, Private Sectors</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Digital Expo</h4>
+													<span class="fc-muted">IT, Healthcare and Business Exhibition</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>3.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Workshop</h4>
+													<span class="fc-muted">IT, Healthcare and Business Workshop (Parallel)</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>4.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Networking Dinner</h4>
+													<span class="fc-muted">Welcoming and entertaining Hackathon participants</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-card" data-animate="fadeInUp" data-delay="300">
+									<div class="accordion-header">
+										<div class="accordion-title">
+											<a href="#snav-content1" class="d-flex">
+												<div class="me-4">
+													<div class="rounded-icon">
+														<i class="bi bi-calendar"></i>
+													</div>
+												</div>
+												
+												<div>
+													<h4 class="mb-1 fw-bold">Day 4</h4>
+													<span class="fc-muted">Sunday, February 19 2023
+													</span>
+												</div>
+											</a>
+										</div>
+										<div class="accordion-icon d-flex">
+											<i class="accordion-closed bi bi-chevron-down"></i>
+											<i class="accordion-open bi bi-chevron-up"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-title">
+											<h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">Agenda Day 4</h4>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>1.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Pitching Day</h4>
+													<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+												</div>
+											</div>
+											<div class="d-flex mb-4">
+												<div class="me-4">
+													<div class="number fw-bold d-flex align-items-center justify-content-center">
+														<span>2.</span>
+													</div>
+												</div>
+												<div>
+													<h4 class="mb-1 fw-bold">Gala Dinner & Closing</h4>
+													<span class="fc-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 
 				<div id="section-track" class="section parallax m-0 dark track" style="background-image: url('assets/images/biofarma.jpg'); padding: 150px 0; background-position:center;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 
 					<div class="container clearfix">
 
-						<h5 class="text-uppercase ls4 fw-normal mb-5 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Hackathon Track</h5>
+						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="100">Hackathon Track</h5>
 						<div class="row gx-6">
 							<div class="col-md-6">
 								<h2 class="text-capitalize fw-bold font-body mb-2" data-animate="fadeInUp" data-delay="200">Up Stream</h2>
@@ -728,7 +870,7 @@
 
 				<div id="section-participant" class="page-section participant bg-dark-2 pt-6">
 
-						<div class="center">
+						<div class="center container">
 							<h5 class="text-uppercase ls4 fw-normal mb-2 fc-secondary" data-animate="fadeInUp" data-delay="100">Participants</h5>
 							<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="200">Participant Roles</h2>
 							<p data-animate="fadeInUp" data-delay="300" class="fc-muted mb-4">
@@ -822,13 +964,13 @@
 						
 						<div class="row clearfix mt-6 gx-6">
 
-							<div data-animate="fadeInLeft" data-delay="300" class="col-md-6">
+							<div data-animate="fadeInLeft" data-delay="300" class="col-lg-6 mb-5">
 								<img src="assets/images/winner.svg" alt="Winner">
 							</div>
 
 							<div class="col-lg-6">
-								<div data-animate="fadeInUp" data-delay="300">
-									<div class="prize mb-5 px-5 py-4">
+								<div class="d-flex align-items-center justify-content-center justify-content-lg-start" data-animate="fadeInUp" data-delay="300">
+									<div class="prize mb-5 px-5 py-4 text-center">
 										<h4 class="mb-0 fw-bold">Total Prize 16,000 USD</h4>
 									</div>
 								</div>
@@ -874,76 +1016,76 @@
 						</div>
 
 						<div class="row clearfix mt-6 list">
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/Hello-Sehat.png" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/Pemimpin.id.png" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/Jabar-Digital-Service.png" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/1001-Startup-Digital.png" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/Agility-Transformation.png" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/biofarma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/kimia-farma.svg" alt="Image">
 							</div>
-							<div class="col-2 center d-flex align-items-center justify-content-center p-4">
+							<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-4 center d-flex align-items-center justify-content-center">
 								<img src="assets/partners/indofarma.svg" alt="Image">
 							</div>
 						</div>

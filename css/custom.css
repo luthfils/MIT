@@ -5,85 +5,6 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
-/* @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 300;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 600;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 800;
-    src: local('Open Sans'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans Light';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans Condensed'), url('https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff') format('woff');
-} */
-
 body {
     line-height: 1.5;
     color: #F5F5F5;
@@ -236,6 +157,10 @@ h1 {
     transition: all .3s ease;
 }
 
+.dark .button-dark:not(.button-border):not(:hover), .dark .button:hover {
+    background-color: #FF914D;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #F5F5F5;
 }
@@ -246,6 +171,10 @@ h2 {
 
 .gx-6 {
     --bs-gutter-x: 5rem;
+}
+
+.gy-6 {
+    --bs-gutter-y: 5rem;
 }
 
 .emphasis-title p {
@@ -274,13 +203,82 @@ h2 {
     color: #F5F5F5 !important;
 }
 
+.sub-menu-container .menu-item.current > .menu-link {
+    color: #00AEBF !important;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.dark #header.sticky-header #header-wrap, #header.sticky-header.dark #header-wrap {
+    border-bottom-color: transparent !important;
+}
+
+.dark #header, #header.dark {
+    background-color: #212745;
+    border-bottom-color: #212745;
+}
+
+.dark .primary-menu + .primary-menu, .dark .menu-item:not(:first-child), .dark .sub-menu-container, .dark .mega-menu-content, .dark .sub-menu-container .menu-item:not(:first-child) {
+    border-top-color: transparent;
+}
+
+@media (max-width: 991px) {
+    #header.transparent-header:not(.sticky-header) #header-wrap {
+        background-color: #212745;
+        border-bottom: 1px solid #212745;
+    }
+
+    #header {
+        border-bottom: 1px solid #212745;
+    }
+
+    .svg-trigger path {
+        stroke: #F5F5F5;
+    }
+
+    .header-size-custom #logo img {
+        height: 42px;
+    }
+
+    .header-size-custom #logo {
+        padding: 14px 0;
+    }
+
+    .menu-container {
+        box-shadow: 0px 10px 70px rgb(3 27 78 / 10%);
+        background-color: #272F53;
+        border-radius: 14px;
+        padding: 14px;
+        overflow: hidden !important;
+    }
+
+    .sub-menu-container {
+        border-left: 2px solid #00AEBF;
+        margin-left: 5px;
+    }
+
+    /* .dark #header.sticky-header #header-wrap, #header.sticky-header.dark #header-wrap {
+        background-color: transparent;
+    } */
+}
+
+@media (max-width: 991.98px) {
+    .sticky-header .menu-container {
+        margin: 0;
+    }
+}
+
+
+
 @media (min-width: 992px) {
     .sub-menu-container, .mega-menu-content {
         position: absolute;
         visibility: hidden;
         background-color: #272F53;
-        box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
-        border: 1px solid #272F53;
+        box-shadow: 0px 10px 70px rgb(3 27 78 / 10%);
+        border: 0px solid #272F53;
             border-top-color: rgb(39, 47, 83);
             border-top-style: solid;
             border-top-width: 1px;
@@ -297,6 +295,18 @@ h2 {
         padding-left: 18px;
         color: #00AEBF !important;
         border-radius: 14px;
+    }
+
+    .dark .primary-menu:not(.not-dark) .sub-menu-container .menu-item:hover > .menu-link {
+        background-color: transparent;
+        color: #00AEBF;
+    }
+
+    .dark .primary-menu:not(.not-dark) .sub-menu-container, .dark .primary-menu:not(.not-dark) .mega-menu-content {
+        background-color: #272f53;
+        border-color: rgba(255,255,255,0.05);
+        border-top-color: rgba(255, 255, 255, 0.05);
+        border-top-color: #00AEBF;
     }
 }
 
@@ -442,7 +452,8 @@ h2 {
     color: #455778;
 } */
 
-.timeline .sidenav li a .rounded-icon {
+.timeline .sidenav li a .rounded-icon,
+.timeline .rounded-icon {
     width: 52px;
     height: 52px;
     display: flex;
@@ -471,7 +482,8 @@ h2 {
     color: #FFF !important;
 }
 
-.timeline .sidenav li i {
+.timeline .sidenav li i,
+.timeline i {
     position: relative;
     top: 0;
     margin-right: 0;
@@ -526,6 +538,19 @@ h2 {
     border-radius: 100%;
     width: 50px;
     height: 50px;
+}
+
+.timeline .accordion .accordion-header span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.timeline .accordion .number {
+    background-color: #2a335b;
+}
+
+.timeline .accordion .accordion-icon i {
+    font-size: 16px;
 }
 
 /* --------------------- Sponsor --------------------- */
@@ -1045,7 +1070,8 @@ h2 {
 
 /* --------------------- FAQ --------------------- */
 
-.faq .accordion-card {
+.faq .accordion-card,
+.timeline .accordion-card {
     background: #272F53;
     margin-bottom: 32px;
     padding: 0 20px;
@@ -1059,7 +1085,8 @@ h2 {
     padding-left: 30px;
 }
 
-.faq .accordion-header {
+.faq .accordion-header,
+.timeline .accordion-header {
     padding: 28px 0;
     border-top: 0px dotted #DDD;
     cursor: pointer;
@@ -1115,18 +1142,19 @@ h2 {
 .card-contact:hover .square-icon {
     background: #03d9cd;
     color: white;
-    transition: all .3s ease;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-.card-contact:hover {
+.card-contact {
     border-radius: 14px;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
 .card-contact:hover {
     border-radius: 14px;
     box-shadow: 0px 10px 70px rgb(3 27 78 / 10%);
-    transition: all .3s ease;
     background: #272F53;
+    transform: translateY(-3px) !important;
 }
 
 /* --------------------- Download --------------------- */
