@@ -2,6 +2,7 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
 
@@ -49,7 +50,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="bg-dark full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false" data-sticky-offset="full" data-sticky-offset-negative="650">
+		<header id="header" class="full-header dark border-full-header header-size-custom bg-dark" data-sticky-shrink="false" data-mobile-sticky="true">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -61,7 +62,7 @@
 							<a href="index.html" class="retina-logo" data-dark-logo="assets/logo/logo-mit-dark.svg"><img src="assets/logo/logo-mit-dark.svg" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
-						<div class="header-misc">
+						<div class="header-misc d-none d-sm-block">
 							<a href="register.html">
 								<button class="button button-circle fw-medium ms-0"> Register Now </button>
 							</a>
@@ -104,6 +105,11 @@
 								</li>
 								<li class="menu-item">
 									<a href="faq.html" class="menu-link" ><div>FAQ</div></a>
+								</li>
+								<li class="menu-item d-block d-sm-none">
+									<a href="register.html">
+										<button class="button button-circle fw-medium ms-0"> Register Now </button>
+									</a>
 								</li>
 							</ul>
 
@@ -564,56 +570,48 @@
 				============================================= -->
 				<div class="footer-widgets-wrap">
 
-					<div class="widget clearfix">
-						<div class="row justify-content-between">
+					<div class="row clearfix gy-5">
 
-							<div class="col-3">
-								<div class="clearfix mb-5" data-animate="fadeInUp" data-delay="100">
-									<img src="assets/logo/logo-mit-dark.svg" alt="Image" class="">
-								</div>
-								<div class="clearfix" data-animate="fadeInUp" data-delay="200">
-									<p class="mb-0 fc-muted">A solution to an existing problem that is developed by intense innovative teamwork in a short amount of time. </p>
+						<div class="col-lg-6">
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="clearfix mb-4" data-animate="fadeInUp" data-delay="100">
+										<img src="assets/logo/logo-mit-dark.svg" alt="Image" class="">
+									</div>
+									<div class="clearfix" data-animate="fadeInUp" data-delay="200">
+										<p class="mb-0 fc-muted">A solution to an existing problem that is developed by intense innovative teamwork in a short amount of time. </p>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-7">
+						</div>
 
+						<div class="col-lg-6">
+
+							<div class="clearfix dark">
 								<div class="row">
-									<div class="col-3" data-animate="fadeInUp" data-delay="300">
-										<ul>
-											<li class="mb-3"><a href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-scrollto="#wrapper">Home</a></li>
-											<li class="mb-3"><a href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-scrollto="#section-about">Event</a></li>
-											<li class="mb-3"><a href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-scrollto="#section-specialist">Team</a></li>
-											<li class="mb-3"><a href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-scrollto="#section-specialist">Sponsor</a></li>
+									<div class="col-6" data-animate="fadeInUp" data-delay="300">
+										<ul class="mb-0">
+											<!-- <li class="mb-3"><a href="index.html">Home</a></li> -->
+											<li class="mb-3"><a href="speaker.html">Conference Speaker</a></li>
+											<li class="mb-3"><a href="judges.html">Judges</a></li>
+											<li class="mb-3"><a href="mentor.html">Mentor</a></li>
+											<li class="mb-3"><a href="terms.html">Sponsor</a></li>
 										</ul>
 									</div>
 
-									<div class="col-3" data-animate="fadeInUp" data-delay="400">
-										<ul>
-											<li class="mb-3"><a href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-scrollto="#section-feature">FAQ</a></li>
+									<div class="col-6" data-animate="fadeInUp" data-delay="400">
+										<ul class="mb-0">
+											<li class="mb-3"><a href="contact.html">Contact</a></li>
+											<li class="mb-3"><a href="faq.html">FAQ</a></li>
 											<li class="mb-3"><a href="terms.html">Terms of Service</a></li>
 											<li class="mb-3"><a href="privacy.html">Privacy Policy</a></li>
 										</ul>
 									</div>
-
-
-									<div class="col" data-animate="fadeInUp" data-delay="500">
-
-										<div class="subscribe-widget clearfix fc-muted">
-											<p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
-											<div class="widget-subscribe-form-result"></div>
-											<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
-												<div class="input-group mx-auto">
-													<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-													<button class="btn bg-primary dark" type="submit">Subscribe</button>
-												</div>
-											</form>
-										</div>
-			
-									</div>
 								</div>
-
 							</div>
+
 						</div>
 
 					</div>
@@ -626,52 +624,56 @@
 			<div id="copyrights bg-dark-2">
 				<div class="container pb-4">
 
-					<div class="row justify-content-between d-flex align-items-center">
-						<div class="col-12 col-lg-auto text-center text-lg-start copyrights" data-animate="fadeInUp" data-delay="100">
+					<div class="line mb-4 mt-0"></div>
+
+					<div class="row justify-content-between d-flex align-items-center gy-4">
+						<div class="col-12 col-lg-auto text-center text-lg-start copyrights fc-muted" data-animate="fadeInUp" data-delay="100">
 							Copyrights &copy; 2022 All Rights Reserved by <a href="">Bio Farma X MIT
 								Hacking Medicine</a>
 						</div>
 
-						<div class="col-12 col-lg-auto text-center text-lg-end d-flex align-items-center" data-animate="fadeInUp" data-delay="200">
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-vimeo">
-								<i class="icon-vimeo"></i>
-								<i class="icon-vimeo"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-github">
-								<i class="icon-github"></i>
-								<i class="icon-github"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-yahoo">
-								<i class="icon-yahoo"></i>
-								<i class="icon-yahoo"></i>
-							</a>
-
-							<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
+						<div class="col-12 col-lg-auto text-center text-lg-end" data-animate="fadeInUp" data-delay="200">
+							<div class=" d-flex justify-content-center">
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-pinterest">
+									<i class="icon-pinterest"></i>
+									<i class="icon-pinterest"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-vimeo">
+									<i class="icon-vimeo"></i>
+									<i class="icon-vimeo"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-github">
+									<i class="icon-github"></i>
+									<i class="icon-github"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-yahoo">
+									<i class="icon-yahoo"></i>
+									<i class="icon-yahoo"></i>
+								</a>
+	
+								<a href="#" class="social-icon inline-block si-small si-borderless mb-0 si-linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 
