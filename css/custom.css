@@ -484,6 +484,10 @@ h2 {
     font-size: 16px;
 }
 
+.track {
+    background-image: url("../assets/images/biofarma.jpg");
+}
+
 /* --------------------- Sponsor --------------------- */
 
 .sponsor .list-group-item {
