@@ -630,10 +630,17 @@ h2 {
     transform: scale(1.2);
 }
 
-/* --------------------- Privacy & Term --------------------- */
+/* --------------------- Page Title --------------------- */
 
 #page-title.page-title-dark .breadcrumb a:hover {
     color: #00AEBF;
+    
+}
+
+#page-title.page-title-dark {
+    background-image: url('../assets/images/pat3.svg');
+    background-size: cover;
+    padding: 100px 0;
 }
 
 .title-block {
