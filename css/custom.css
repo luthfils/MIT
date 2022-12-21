@@ -1273,11 +1273,12 @@ h2 {
         background-color: #272F53;
         border-radius: 14px;
         padding: 14px;
+        margin-bottom: 12px !important;
         /* overflow: hidden !important; */
     }
 
     .sub-menu-container {
-        border-left: 2px solid #00AEBF;
+        border-left: 2px solid #FF914D;
         margin-left: 5px;
     }
 
