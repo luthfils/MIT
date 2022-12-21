@@ -488,6 +488,17 @@ h2 {
     background-image: url("../assets/images/biofarma.jpg");
 }
 
+[id^="particles-"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
 /* --------------------- Sponsor --------------------- */
 
 .sponsor .list-group-item {
@@ -637,14 +648,15 @@ h2 {
 /* --------------------- Page Title --------------------- */
 
 #page-title.page-title-dark .breadcrumb a:hover {
-    color: #00AEBF;
+    color: #FF914D;
     
 }
 
 #page-title.page-title-dark {
-    background-image: url('../assets/images/pat3.svg');
+    /* background-image: url('../assets/images/pat3.svg'); */
     background-size: cover;
     padding: 100px 0;
+    background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgb(33, 39, 69)), url("../assets/images/heritage.jpg");
 }
 
 .title-block {
@@ -1271,7 +1283,17 @@ h2 {
     }
     .contact .fluid-width-video-wrapper {
         height: 500px;
-      }
+    }
+
+    #header.transparent-header.dark:not(.sticky-header) #header-wrap {
+        background-color: #212745 !important;
+        border-bottom-color: #212745 !important;
+    }
+
+    .dark #header.transparent-header #header-wrap, .dark #header.semi-transparent #header-wrap, #header.dark.transparent-header #header-wrap, #header.dark.semi-transparent #header-wrap {
+        background-color: #212745;
+        border-bottom-color: #212745;
+    }
 
     /* .dark #header.sticky-header #header-wrap, #header.sticky-header.dark #header-wrap {
         background-color: transparent;

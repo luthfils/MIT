@@ -49,7 +49,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header dark border-full-header header-size-custom bg-dark" data-sticky-shrink="false" data-mobile-sticky="true">
+		<header id="header" class="transparent-header full-header dark header-size-custom" data-sticky-shrink="false" data-mobile-sticky="true">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -111,9 +111,8 @@
 
 		<!-- Page Title
 		============================================= -->
-		<section id="page-title" class="page-title-dark bg-dark page-title-parallax"
-		data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;"
-		>
+		<section id="page-title" class="page-title-parallax page-title-dark include-header" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+			<div id="particles-line"></div>
 
 			<div class="container clearfix" data-animate="fadeInUp" data-delay="20">
 				<div class="">
@@ -317,6 +316,11 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
 	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+
+	<!-- Main Particles Js
+	============================================= -->
+	<script src="js/particles/particles.min.js"></script>
+	<script src="js/particles/particles-line.js"></script><!-- Particles Line -->
 
 	<!-- Footer Scripts
 	============================================= -->
