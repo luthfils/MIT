@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:hover {
-    color: #00AEBF;
+    color: #FF914D;
 }
 
 .full-width {
@@ -204,7 +204,7 @@ h2 {
 }
 
 .sub-menu-container .menu-item.current > .menu-link {
-    color: #00AEBF !important;
+    color: #FF914D !important;
 }
 
 .w-80 {
@@ -656,7 +656,7 @@ h2 {
     /* background-image: url('../assets/images/pat3.svg'); */
     background-size: cover;
     padding: 100px 0;
-    background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgb(33, 39, 69)), url("../assets/images/heritage.jpg");
+    background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgba(1, 33, 37, 0.9)), url("../assets/images/heritage.jpg");
 }
 
 .title-block {
@@ -1109,7 +1109,7 @@ h2 {
 }
 
 .contact .card-contact span:hover {
-    color: #00AEBF !important;
+    color: #FF914D !important;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
@@ -1160,7 +1160,7 @@ h2 {
 }
 
 .footer a:hover {
-    color: #00AEBF !important;
+    color: #FF914D !important;
 }
 
 .footer .btn:hover {
@@ -1193,6 +1193,10 @@ h2 {
     border-color: #fff !important;
     border: 0px solid;
 }
+
+.dark .menu-item:hover > .menu-link, .dark .menu-item.current > .menu-link {
+    color: #FF914D;
+  }
 
 .copyrights {
     font-size: 14px;
@@ -1327,7 +1331,7 @@ h2 {
     .sub-menu-container .menu-item:hover > .menu-link {
         background-color: #272F53;
         padding-left: 18px;
-        color: #00AEBF !important;
+        color: #FF914D !important;
         border-radius: 14px;
     }
 
