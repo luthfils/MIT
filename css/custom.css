@@ -486,8 +486,10 @@ h2 {
 }
 
 .track {
-    background-image: url("../assets/images/biofarma.jpg");
+    background-image: url("../assets/images/heritage.jpg");
     padding-bottom: 150px !important;
+    /* background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgba(1, 33, 37, 0.9)), url("../assets/images/heritage.jpg"); */
+    background-size: cover;
 }
 
 [id^="particles-"] {
@@ -655,10 +657,10 @@ h2 {
 }
 
 #page-title.page-title-dark {
-    /* background-image: url('../assets/images/pat3.svg'); */
+    background-image: url("../assets/images/heritage.jpg");
     background-size: cover;
     padding: 100px 0;
-    background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgba(1, 33, 37, 0.9)), url("../assets/images/heritage.jpg");
+    /* background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgba(1, 33, 37, 0.9)), url("../assets/images/heritage.jpg"); */
 }
 
 .title-block {
