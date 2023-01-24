@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px !important;
 }
 
+.fc-white {
+    color: #F5F5F5 !important;
+}
+
+.b-bottom {
+    border-bottom: 1px solid #F5F5F517;
+}
+
 .list-alpha li {
     list-style-type: lower-alpha !important;
 }
@@ -187,13 +195,14 @@ h2 {
   }
 
 .table-lg > :not(caption) > * > * {
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .table-comparison th:first-child, .table-comparison td:first-child {
     text-align: left;
     font-weight: bold;
     width: 25%;
+    border-right: 1px solid #F5F5F517;
   }
 
 .sub-menu-container .menu-item:hover > .menu-link {
@@ -567,6 +576,11 @@ h2 {
 
 .sponsor .table td {
     color: #F5F5F591 !important;
+}
+
+.sponsor .table-responsive  {
+    background: #272f53;
+    border-radius: 14px;
 }
 
 /* --------------------- Speaker, Judges --------------------- */
