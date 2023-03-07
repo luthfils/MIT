@@ -294,8 +294,8 @@
 								</a>
 							</div>
 
-							<div data-animate="fadeInUp" data-delay="10" class="col-lg-6 text-center">
-								<img src="assets/images/header.svg" alt="Header">
+							<div data-animate="fadeInUp" data-delay="10" class="col-lg-6 text-center d-none d-lg-block">
+								<img src="assets/images/header-photo.png" alt="Header">
 							</div>
 						</div>
 					</div>
@@ -318,21 +318,36 @@
 				<div id="section-about" class="page-section about bg-dark pt-6">
 
 					<div class="container clearfix">
-						<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary text-center" data-animate="fadeInUp" data-delay="10">About</h5>
-						<div class="row gx-6 gy-5">
+						<div class="row gx-6 gy-5 align-items-center mb-6">
 							<div class="col-lg-6">
+								<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary" data-animate="fadeInUp" data-delay="10">About</h5>
 								<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="20">Bio Farma, The Pharmaceutical SOE Holding</h2>
-								<p data-animate="fadeInUp" data-delay="30" class="fc-muted">
+								<p data-animate="fadeInUp" data-delay="30" class="fc-muted mb-0">
 									The Pharmaceutical SOE Holding was formed on January 31, 2020, consisting of PT Bio Farma (Persero), PT Kimia Farma Tbk, and PT Indofarma Tbk. In 2021, PT INUKI also joined the holding company. Each members of the Holding have different business focus : PT Bio Farma (Persero) focuses on life science business, PT Kimia Farma Tbk focuses on medicine business, PT Indofarma Tbk focuses on herbal and medical device business, and PT INUKI operates in the nuclear technology industry. The purpose of Pharmaceutical SOE Holding establishment is to strengthen the national pharmaceutical industry independence, increase national product availability, and create joint innovations in supply of pharmaceutical products.
 								</p>
 							</div>
 
 							<div class="col-lg-6">
-								<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="40">MIT Hacking Medicine</h2>
-								<p data-animate="fadeInUp" data-delay="50" class="fc-muted">
+								<div data-animate="fadeInUp" data-delay="10">
+									<img src="assets/images/biofarma-photo.jpg" alt="biofarma" class="rounded-14">
+								</div>
+							</div>
+						</div>
+
+						<div class="row gx-6 gy-5 align-items-center">
+							<div class="col-lg-6 order-last order-lg-first">
+								<div data-animate="fadeInUp" data-delay="10">
+									<img src="assets/images/mit-photo.jpg" alt="biofarma" class="rounded-14">
+								</div>
+							</div>
+
+							<div class="col-lg-6 order-first order-lg-last">
+								<h5 class="text-uppercase ls4 fw-normal mb-3 fc-secondary" data-animate="fadeInUp" data-delay="10">About</h5>
+								<h2 class="text-capitalize fw-bold font-body" data-animate="fadeInUp" data-delay="20">MIT Hacking Medicine</h2>
+								<p data-animate="fadeInUp" data-delay="30" class="fc-muted">
 									MIT Hacking Medicine has facilitated hackathon events in nearly a dozen countries and multiple U.S. states. It aims to energize the healthcare community and accelerate medical innovation. 
 								</p>
-								<p data-animate="fadeInUp" data-delay="60" class="fc-muted">
+								<p data-animate="fadeInUp" data-delay="40" class="fc-muted mb-0">
 									MIT Hacking Medicine routinely collaborates with prominent organizations and corporations, such as The Kauffman Foundation, Massachusetts General Hospital, Emergency Nurses Association, Pfizer, Microsoft, Samsung, GE, Merck, and AthenaHealth. The group has also been featured in top media outlets such as SXSW, The Wall Street Journal, Slate, and Wired. 
 								</p>
 							</div>
@@ -847,7 +862,7 @@
 					</div>
 				</div>
 
-				<div id="section-participant" class="page-section participant bg-dark-2 pt-6">
+				<div id="section-participant" class="page-section participant bg-dark-2 pt-6 pb-0">
 
 						<div class="center container">
 							<h5 class="text-uppercase ls4 fw-normal mb-2 fc-secondary" data-animate="fadeInUp" data-delay="10">Participants</h5>
@@ -860,9 +875,8 @@
 						<div class="row clearfix mt-6 bg-dark">
 
 							<div class="row align-items-stretch">
-
-								<div data-animate="fadeInLeft" data-delay="40" class="col-lg-4 d-none d-md-block" style="background: url('assets/images/participant.jpg') center center no-repeat; background-size: cover;"></div>
-								<div class="col-lg-8">
+								<!-- <div data-animate="fadeInLeft" data-delay="40" class="col-lg-4 d-none d-md-block" style="background: url('assets/images/participant.jpg') center center no-repeat; background-size: cover;"></div> -->
+								<div class="col-lg-12">
 									<div class="row align-items-stretch grid-border clearfix">
 										<div class="col-lg-4 col-md-6 col-padding" data-animate="fadeInUp" data-delay="50">
 											<div class="feature-box fbox-center fbox-dark fbox-plain">
@@ -926,14 +940,17 @@
 										</div>
 									</div>
 								</div>
-		
 							</div>
 
+							<div class="d-none d-lg-block parallax min-vh-100 dark m-0 border-0 d-flex" style="background: #161b2e url('assets/images/participant.png') center center no-repeat; background-size: cover;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;"></div>
+							<div class="d-lg-none d-lg-block m-0 border-0 participant-parallax">
+								<img src="assets/images/participant.png" alt="Participant">
+							</div>
 						</div>
 
 				</div>
 
-				<div id="section-winner" class="page-section winner bg-dark-2 pt-6">
+				<div id="section-winner" class="page-section winner pt-6">
 					<div class="container clearfix">
 
 						<div class="center">
@@ -944,7 +961,7 @@
 						<div class="row clearfix mt-6 gx-6">
 
 							<div data-animate="fadeInUp" data-delay="30" class="col-lg-6 mb-5">
-								<img src="assets/images/winner.svg" alt="Winner">
+								<!-- <img src="assets/images/winner.svg" alt="Winner"> -->
 							</div>
 
 							<div class="col-lg-6">
@@ -1009,7 +1026,7 @@
 						</div>
 						
 						<div class="list clearfix mt-6" data-animate="fadeInUp" data-delay="30">
-							<div class="row gy-2">
+							<div class="row gy-2 justify-content-center">
 								<div class="col-xl-2 col-lg-3 col-md-4 col-6 p-4 center d-flex align-items-center justify-content-center">
 									<img src="assets/partners/BUMN.png" alt="Image">
 								</div>

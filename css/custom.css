@@ -496,7 +496,7 @@ h2 {
 }
 
 .track {
-    background-image: url("../assets/images/heritage.jpg");
+    background-image: url("../assets/images/track-bg.jpg");
     padding-bottom: 150px !important;
     /* background-image: linear-gradient(to top, rgba(0, 174, 191, 0.6), rgba(1, 33, 37, 0.9)), url("../assets/images/heritage.jpg"); */
     background-size: cover;
@@ -662,6 +662,11 @@ h2 {
 .winner .prize:hover,
 .winner .flight:hover {
     transform: scale(1.2);
+}
+
+.winner {
+    background: url("../assets/images/winner-photo.jpg") center left no-repeat;
+    background-size: cover;
 }
 
 /* --------------------- Page Title --------------------- */
@@ -1321,6 +1326,14 @@ h2 {
     .dark #header.transparent-header #header-wrap, .dark #header.semi-transparent #header-wrap, #header.dark.transparent-header #header-wrap, #header.dark.semi-transparent #header-wrap {
         background-color: #212745;
         border-bottom-color: #212745;
+    }
+
+    .winner {
+        background: #1F2642 !important;  
+    }
+
+    .participant-parallax {
+        background: #161b2e;
     }
 
     /* .dark #header.sticky-header #header-wrap, #header.sticky-header.dark #header-wrap {
