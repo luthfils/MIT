@@ -1345,6 +1345,13 @@ h2 {
     .sticky-header .menu-container {
         margin: 0;
     }
+    #slider .slider-inner {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        flex-grow: 1;
+        align-items: normal;
+      }
 }
 
 @media (min-width: 992px) {
